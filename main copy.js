@@ -14,8 +14,7 @@ function createWindow() {
     })
 
     // and load the index.html of the app.
-    // mainWindow.loadFile('index.html')
-    mainWindow.loadFile(path.join(__dirname, '/view/Signin/index.html'))
+    mainWindow.loadFile('index.html')
 
     // Open the DevTools.
     // mainWindow.webContents.openDevTools()
@@ -23,29 +22,8 @@ function createWindow() {
 
 
 app.on('ready', function() {
-    mainWindow = new BrowserWindow({
-        width: 535,
-        height: 420,
-        resizable: false,
-        frame: false,
-        webPreferences: {
-            devTools: true,
-            nodeIntegration: true, //开启页面的nodejs能力
-        }
-
-    });
-    mainWindow.webContents.openDevTools()//打开调试窗口
-    mainWindow.loadURL(path.join(__dirname, '/view/Signin/index.html'))
-    // 引入ipc
-    require('./ipcMain/ipc_Login')
-
-
-
-
-
-
-
-
+    mainWindow = new BrowserWindow({ width: 800, height: 600 });
+    mainWindow.loadURL(path.join(__dirname, 'index.html'))
     mainWindow.on('closed', function() {
         mainWindow = null;
     });

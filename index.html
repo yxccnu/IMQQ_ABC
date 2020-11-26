@@ -1,19 +1,46 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="UTF-8">
     <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
     <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
-    <title>Hello World!</title>
-  </head>
-  <body>
-    <h1>Hello World!</h1>
-    We are using Node.js <span id="node-version"></span>,
-    Chromium <span id="chrome-version"></span>,
-    and Electron <span id="electron-version"></span>.
+    <title>首页</title>
+    <link href="../../bootstrap_dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- 自定义样式 -->
+    <link href="signin.css" rel="stylesheet">
+    <script type="text/javascript">
+        // 引入ipcrender
+        const {
+            ipcRenderer
+        } = require('electron')
 
+
+        // 脚本----------------------------------------------------------
+        // 脚本----------------------------------------------------------
+        // 脚本----------------------------------------------------------
+        // 脚本----------------------------------------------------------
+        // 脚本----------------------------------------------------------
+        // 脚本----------------------------------------------------------
+
+        // 点击打开聊天窗口
+        function openChatWind() {
+            alert('打开窗口');
+        }
+
+
+    </script>
+</head>
+
+<body>
+    <h1>你好，世界！</h1>
+    <div class="input-group">
+        <span class="input-group-addon" id="basic-addon1">@</span>
+        <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
+    </div>
     <!-- You can also require other files to run in this process -->
     <script src="./renderer.js"></script>
-  </body>
+</body>
+
 </html>
