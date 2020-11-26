@@ -3,59 +3,28 @@
 
 <head>
     <meta charset="UTF-8">
-    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
-    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
-    <title>Hello World!</title>
+    <title>首页</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./mainPage.css" rel="stylesheet">
+    <script src="./mainPage.js"></script>
 </head>
 
 <body>
-    <h1>你好，世界！</h1>
-    <div class="input-group">
-      <span class="input-group-addon" id="basic-addon1">@</span>
-      <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
+  <div class="wrapper">
+    <!-- 头部 -->
+    <div class="main-header can-drag">
+      <span class="glyphicon glyphicon-option-horizontal cant-drag left-icon" aria-hidden="true"></span>
+      <span class="glyphicon glyphicon-record cant-drag right-icon" cant-drag aria-hidden="true"></span>
     </div>
+    <!-- 消息列表 -->
+    <div class="msg-list">
 
+    </div>
+    <!-- 底部 -->
+    <div class="main-footer">
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-    <!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
-    <script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
-    <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
-
-    <!-- You can also require other files to run in this process -->
-    <script src="./renderer.js"></script>
+    </div>
+  </div>
 </body>
 
 </html>

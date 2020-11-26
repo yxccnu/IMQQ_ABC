@@ -28,6 +28,7 @@ app.on('ready', function() {
         height: 420,
         resizable: false,
         frame: false,
+        transparent:true,
         webPreferences: {
             devTools: true,
             nodeIntegration: true, //开启页面的nodejs能力

@@ -18,7 +18,7 @@ ipcMain.on('load-mainpage', (event, arg) => {
         mainWind.setPosition(500,0,true)
         // 加载主页面
 
-        mainWind.loadURL(path.join(__dirname, '../index.html'))
+        mainWind.loadURL(path.join(__dirname, '../view/MainPage/index.html'))
 
 
 })

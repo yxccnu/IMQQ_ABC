@@ -1,0 +1,74 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+
+/* 外层包裹 */
+
+.wrapper {
+    height: 100%;
+    width: 100%;
+    background: #0cebeb;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #29ffc6, #20e3b2, #0cebeb);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #29ffc6, #20e3b2, #0cebeb);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+
+/* 头部样式 */
+
+.can-drag {
+    -webkit-app-region: drag;
+}
+
+.cant-drag {
+    -webkit-app-region: no-drag;
+}
+
+.main-header {
+    height: 30px;
+    width: 100%;
+    /* background: green; */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.left-icon,
+.right-icon {
+    font-size: 14px;
+    color: #3a3838;
+    padding: 8px!important;
+    line-height: 14px!important;
+    top: 0px!important;
+}
+
+.left-icon:hover,
+.right-icon:hover {
+    /* background: violet; */
+    color:white;
+    cursor: pointer;
+}
+
+
+/* 消息列表 */
+
+.msg-list {
+    height: calc(100% - 60px);
+    /* height: 100px; */
+    width: 100%;
+    background: transparent;
+}
+
+
+/* 底部 */
+
+.main-footer {
+    height: 30px;
+    width: 100%;
+    background: turquoise;
+}
