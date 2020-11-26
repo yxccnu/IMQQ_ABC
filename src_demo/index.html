@@ -1,0 +1,39 @@
+
+<html>
+<head>
+    <script src="http://cdn.ronghub.com/RongIMLib-2.2.5.min.js"></script>
+    <script src="./sdkbase/BaseSdkTypes.js"></script>
+    <script src="test_login.js"></script>
+
+    <!--<script src="contact/contactTypes.js"></script>-->
+	<script src="./test_transfer.js"></script>
+	<script src="./test_msg.js"></script>
+</head>
+<h1>在控制台查看测试结果</h1>
+<div style="border: red 1px solid; merge:1px;">
+    <h4>登录测试</h4>
+    <button onclick="test()">登录</button>
+    <button onclick="getSdkParam()">服务器地址</button>
+    <button onclick="appLogout()">注销登录</button>
+</div>
+
+
+
+<div style="border: red 1px solid;merge:1px;">
+    <h5>文件测试</h5>
+
+	<button onclick="downloadFile()">文件下载</button>
+
+</div>
+
+
+
+<div style="border: red 1px solid;merge:1px;">
+    <h5>新消息测试</h5>
+    <button onclick="sendTxtMsg()">发文本消息</button>
+    <button onclick="sendImageMsg()">发图片消息</button>
+    <button onclick="sendFileMsg()">发文件消息</button>
+
+</div>    
+
+</html>
