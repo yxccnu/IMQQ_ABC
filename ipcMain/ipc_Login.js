@@ -12,9 +12,9 @@ ipcMain.on('load-mainpage', (event, arg) => {
     console.log(arg, 'hello father') // prints "ping"
         // 调整窗口大小和位置
         mainWind.setResizable(true)
-        mainWind.setMinimumSize(360,735)
+        mainWind.setMinimumSize(330,735)
         mainWind.setMaximumSize(760,1600)
-        mainWind.setSize(360,800)
+        mainWind.setSize(330,800)
         mainWind.setPosition(500,0,true)
         // 加载主页面
 

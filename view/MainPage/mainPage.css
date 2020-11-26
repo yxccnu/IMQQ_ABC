@@ -1,74 +1,141 @@
 html,
 body {
-    height: 100%;
-    width: 100%;
+  height: 100%;
+  width: 100%;
 }
-
 
 /* 外层包裹 */
 
 .wrapper {
-    height: 100%;
-    width: 100%;
-    background: #0cebeb;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #29ffc6, #20e3b2, #0cebeb);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #29ffc6, #20e3b2, #0cebeb);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(to right, #488ffe, #27c1fd, #20d0fe);
 }
-
 
 /* 头部样式 */
 
 .can-drag {
-    -webkit-app-region: drag;
+  -webkit-app-region: drag;
 }
 
 .cant-drag {
-    -webkit-app-region: no-drag;
+  -webkit-app-region: no-drag;
 }
 
 .main-header {
-    height: 30px;
-    width: 100%;
-    /* background: green; */
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+  height: 30px;
+  width: 100%;
+  /* background: green; */
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 .left-icon,
 .right-icon {
-    font-size: 14px;
-    color: #3a3838;
-    padding: 8px!important;
-    line-height: 14px!important;
-    top: 0px!important;
+  font-size: 14px;
+  color: whitesmoke;
+  padding: 8px !important;
+  line-height: 14px !important;
+  top: 0px !important;
 }
 
 .left-icon:hover,
 .right-icon:hover {
-    /* background: violet; */
-    color:white;
-    cursor: pointer;
+  /* background: violet; */
+  color: rgb(170, 169, 169);
+  cursor: pointer;
 }
-
 
 /* 消息列表 */
 
 .msg-list {
-    height: calc(100% - 60px);
-    /* height: 100px; */
-    width: 100%;
-    background: transparent;
+  height: calc(100% - 175px);
+  /* height: 100px; */
+  width: 100%;
+  background: white;
+  overflow: auto;
 }
-
 
 /* 底部 */
 
 .main-footer {
-    height: 30px;
-    width: 100%;
-    background: turquoise;
+  height: 50px;
+  width: 100%;
+  background: turquoise;
+}
+
+/* 用户信息外框 */
+.user-info {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 60px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0px 10px 10px 10px;
+  /* background: rebeccapurple; */
+  /* border-bottom: 1px solid gainsboro; */
+}
+
+/* 用户头像设置 */
+.avatar {
+  height: 50px;
+  width: 50px;
+}
+.user-avatar {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+}
+/* 用户姓名和签名展示 */
+.name-words {
+  flex-grow: 1;
+  /* flex-flow: 1; */
+  flex-shrink: 1;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin-left: 10px;
+}
+.name-words .name {
+  font-size: 16px;
+  color: white;
+  font-weight: bold;
+  margin: 0;
+}
+.name-words .words {
+  font-size: 12px;
+  font-weight: 400;
+  color: white;
+}
+
+.input-group {
+  width: 100% !important;
+}
+/*  */
+.form-control {
+  padding-left: 35px;
+  border: none !important;
+  background-color: rgba(255, 255, 255, 0.171) !important;
+}
+.form-control::-webkit-input-placeholder {
+  color: whitesmoke;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.glyphicon-search {
+  position: absolute !important;
+  top: 10px !important;
+  left: 12px !important;
+  color: whitesmoke !important;
+}
+
+.layui-tab {
+  margin: 0;
+}
+.layui-tab-brief > .layui-tab-title .layui-this {
+  color: #24bcf5;
+}
+.layui-tab-title .layui-this:after {
+  border-bottom: 2px solid #24bcf5!important;
 }
