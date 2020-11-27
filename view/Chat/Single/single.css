@@ -1,0 +1,143 @@
+html,
+body,
+.wrapper {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+
+/* 头部样式 */
+
+.can-drag {
+    -webkit-app-region: drag;
+}
+
+.cant-drag {
+    -webkit-app-region: no-drag;
+}
+
+.main-header {
+    height: 50px;
+    width: 100%;
+    /* background: green; */
+    background: linear-gradient(to right, #488ffe, #27c1fd, #20d0fe);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chat-search,
+.chatwho,
+.btn-area {
+    width: 33.33%;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+.left-icon,
+.right-icon {
+    font-size: 14px;
+    color: whitesmoke;
+    padding: 8px !important;
+    line-height: 14px !important;
+    top: 0px !important;
+}
+
+.left-icon:hover,
+.right-icon:hover {
+    /* background: violet; */
+    color: rgb(170, 169, 169);
+    cursor: pointer;
+}
+
+.chat-search {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.layui-input-block {
+    margin-left: 10px;
+}
+
+#chatwho {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.btn-area {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.chat-wrapper {
+    height: calc(100% - 50px);
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.history-list {
+    width: 193px;
+    height: 100%;
+    background: white;
+}
+
+.chat-area {
+    flex-grow: 1;
+    flex-shrink: 1;
+    border-left: 1px solid rgb(236, 236, 236);
+}
+
+.msg-content {
+    height: calc(100% - 200px);
+    width: 100%;
+    background: burlywood;
+}
+
+.input-content {
+    height: 200px;
+    /* background: rebeccapurple; */
+    box-sizing: border-box;
+}
+
+.tool-header {
+    box-sizing: border-box;
+    height: 30px;
+    width: 100%;
+    padding-left: 10px;
+    /* background: cadetblue; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-bottom: 1px solid rgb(236, 236, 236);
+}
+
+.tool-mg-right {
+    margin-right: 10px;
+    font-size: 16px;
+    color: #878b99;
+}
+.tool-mg-right:hover {
+    cursor: pointer;
+    color: #11865f;
+}
+
+
+
+
+.layui-input, .layui-select, .layui-textarea{
+    border-width: 0px;
+    border-style: solid;
+    background-color: rgba(125, 184, 252, 0.445);
+    border-radius: 2px;
+    
+}

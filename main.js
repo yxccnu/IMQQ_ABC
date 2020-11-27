@@ -29,16 +29,19 @@ app.on('ready', function() {
         resizable: false,
         frame: false,
         transparent:true,
+        hasShadow:true,
+        alwaysOnTop:true,
         webPreferences: {
             devTools: true,
             nodeIntegration: true, //开启页面的nodejs能力
         }
 
     });
-    mainWindow.webContents.openDevTools()//打开调试窗口
+    // mainWindow.webContents.openDevTools()//打开调试窗口
     mainWindow.loadURL(path.join(__dirname, '/view/Signin/index.html'))
     // 引入ipc
     require('./ipcMain/ipc_Login')
+    require('./ipcMain/ipc_Chat')
 
 
 

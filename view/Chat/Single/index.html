@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>聊天页面</title>
+    <!-- 引入bootstrap -->
+    <link rel="stylesheet" href="../../../bootstrap_dist/css/bootstrap.min.css" />
+    <!-- 引入layui -->
+    <link rel="stylesheet" href="../../../layui/css/layui.css" />
+    <!-- 引入layuijs -->
+    <script src="../../../layui/layui.js"></script>
+    <!-- 引入自定义修改样式 -->
+    <link href="./single.css" rel="stylesheet" />
+    <script>
+        //注意：导航 依赖 element 模块，否则无法进行功能性操作
+        layui.use("element", function() {
+            var element = layui.element;
+            //…
+        });
+    </script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- 头部 -->
+        <div class="main-header can-drag">
+            <!-- 搜索框 -->
+            <div class="chat-search">
+                <div class="layui-input-block  cant-drag">
+                    <input type="text" name="title" required lay-verify="required" placeholder="搜索会话" autocomplete="off" class="layui-input">
+                </div>
+            </div>
+            <div id="chatwho"><span class="cant-drag">Method.</span></div>
+            <div class="btn-area">
+                <span class="glyphicon glyphicon-option-horizontal cant-drag left-icon" aria-hidden="true"></span>
+                <span class="glyphicon glyphicon-record cant-drag right-icon" cant-drag aria-hidden="true"></span>
+            </div>
+        </div>
+        <!-- 布局聊天div -->
+        <div class="chat-wrapper">
+            <!-- 历史会话记录 -->
+            <div class="history-list">
+                <ul>
+                    <li>123</li>
+                    <li>123</li>
+                    <li>123</li>
+                    <li>123</li>
+                    <li>123</li>
+                    <li>123</li>
+                </ul>
+            </div>
+            <!-- 右边聊天内容 -->
+            <div class="chat-area">
+                <div class="msg-content">
+                    zheshi 聊天内容
+                </div>
+                <div class="input-content">
+                    <div class="tool-header">
+                        <i class="layui-icon layui-icon-face-smile-b tool-mg-right"></i> 
+                        <i class="layui-icon layui-icon-camera tool-mg-right"></i> 
+                        <i class="layui-icon layui-icon-picture tool-mg-right"></i> 
+                    </div>
+                    <div class="input-words">输入框</div>
+                    <div class="send-btn">发送</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <!-- 引入js -->
+    <script src="./single.js"></script>
+</body>
+
+</html>
